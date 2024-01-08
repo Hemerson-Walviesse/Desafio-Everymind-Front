@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #f0f0f0; /* Substitua pela cor desejada */
+    overflow-y: auto; /* Adicione barra de rolagem vertical se necessário */
+    min-height: 100vh;
+}
+
+/* style.css */
+h1 {
+    font-size: 24px;
+    margin: 0; /* Removido margin-bottom */
+    color: black; /* Cor do texto */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#tabela-cabecalho,
+#tabela-corpo {
+    margin-top: 0; /* Remova ou ajuste conforme necessário */
+}
+
+#tabela-corpo {
+    max-height: 600px; /* Altura máxima da tabela antes de adicionar a barra de rolagem */
+    overflow-y: auto; /* Adicione barra de rolagem se a tabela exceder a altura máxima */
+    background-color: #f9f9f9;
+    
+}
+
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#formulario-edicao {
+    width: 40%;
+    margin-top: 20px; /* Ajuste conforme necessário para evitar sobreposição */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#formulario-edicao label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#formulario-edicao input,
+#formulario-edicao textarea,
+#formulario-edicao button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formulario-edicao button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+#formulario-edicao button:hover {
+    background-color: #45a049;
+}
+/* style.css */
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#tabela-corpo tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* style.css */
+
+/* ... (seu código existente) ... */
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#botao-adicionar {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#botao-adicionar:hover {
+    background-color: #45a049;
+}

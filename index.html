@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nunes Sports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Listagem de Produtos</h1>
+    <table>
+        <thead id="tabela-cabecalho">
+            <!-- Os cabeçalhos serão adicionados aqui -->
+          </thead>
+        <tbody id="tabela-corpo">
+            <!-- Os dados da tabela serão inseridos aqui dinamicamente pelo JavaScript -->
+        </tbody>
+    </table>
+
+    <form id="formulario-edicao">
+        <label for="input-nome">Nome:</label>
+        <input type="text" id="input-nome" name="nome" required>
+    
+        <label for="input-descricao">Descrição:</label>
+        <textarea id="input-descricao" name="descricao" required></textarea>
+       
+        <label for="input-codigo">Codigo:</label>
+        <input id="input-codigo" name="codigo" required></input>
+    
+        <label for="input-preco">Preço:</label>
+        <input type="number" id="input-preco" name="preco" step="0.01" required>
+    
+        <!-- Campo oculto para armazenar o ID do produto -->
+        <input type="hidden" id="produto-id" name="produto-id">
+    
+        <button id="btn-salvar" style="display: none;">Salvar</button>
+    </form>
+
+    <button type="button"  id="botao-adicionar" onclick="incluirProduto()">Adicionar</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
